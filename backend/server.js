@@ -21,16 +21,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(
   cors({
     origin: [
-      'https://expense-tracker-pro-0c19.onrender.com',
-      'https://expense-tracker-beta-teal.vercel.app',
+      'http://localhost:5173',
+      'https://expense-tracker-2ex4.vercel.app',
     ],
     credentials: true,
-    methods: [
-      'GET',
-      'POST',
-      'PUT',
-      'DELETE',
-    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
   })
 )
 
