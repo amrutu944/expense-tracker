@@ -18,16 +18,16 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // CORS
-app.use(
-  cors({
-    origin: [
-      'http://localhost:5173',
-      'https://expense-tracker-2ex4.vercel.app',
-    ],
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  })
-)
+// app.use(
+//   cors({
+//     origin: [
+//       'http://localhost:5173',
+//       'https://expense-tracker-2ex4.vercel.app',
+//     ],
+//     credentials: true,
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   })
+// )
 
 app.use(morgan('dev'))
 
